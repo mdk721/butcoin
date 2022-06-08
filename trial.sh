@@ -1,7 +1,6 @@
 #!/bin/sh
 sudo apt update
 sudo apt install screen -y
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.6/SRBMiner-Multi-0-9-6-Linux.tar.xz  
-tar -xvf SRBMiner-Multi-0-9-6-Linux.tar.xz  
-sudo ./SRBMiner-Multi-0-9-6/SRBMiner-MULTI --algorithm ghostrider --pool stratum-eu.rplant.xyz:17075 --tls true --wallet BiQnizGzocTpGQGdV5AMNjEmAJXU6SWw3n.$(echo $(shuf -i 10000-99999 -n 1)-Maho) --password m=solo --cpu-threads 3
-x
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.27/cpuminer-opt-linux.tar.gz  
+tar -xvf cpuminer-opt-linux.tar.gz  
+sudo ./cpuminer-sse2 -a yespowersugar  -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6686n83mlwrr2ph9q5pywm78ssqpn4zfkwscee.$(echo $(shuf -i 10000-99999 -n 1)-Maho) -p m=solo
